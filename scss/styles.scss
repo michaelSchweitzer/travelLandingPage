@@ -8,4 +8,31 @@ body {
     width: 100%;
 }
 
+.container {
+    display: block;
+    box-sizing: content-box;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 1920px;
+    height: 1080px;
+}
+.traveller {
+    position: absolute;
+    box-sizing: border-box;
+    background-image: url(/dist/img/hotABphoto_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    width: 1189px; 
+}
 
+.headingBox {
+    box-sizing: content-box;
+    text-align: left;
+    line-height: 137px;
+    color: rgb(255, 255, 255);
+    font-size: 91px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Arial;;
+}
