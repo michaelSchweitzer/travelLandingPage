@@ -10,29 +10,97 @@ body {
 
 .container {
     display: block;
+    position: absolute;
     box-sizing: content-box;
+    transform: rotate(0.00deg);
     overflow-x: auto;
     overflow-y: auto;
     width: 1920px;
     height: 1080px;
+    font-family: $Segoe;
 }
+
 .traveller {
     position: absolute;
     box-sizing: border-box;
-    background-image: url(/dist/img/hotABphoto_2.jpg);
+    background-image: url(/dist/img/duotone_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 1080px;
     width: 1189px; 
+
+    .travIcon {
+        display: block;
+        position: absolute;
+        box-sizing: content-box;
+        width: 259.00px;
+        height: 174.00px;
+        left: 140.00px;
+        top: 49.00px;
+
+        h1 {
+            position: absolute;
+            box-sizing: content-box;
+            font-size: 41.00px;
+            font-weight: 700;
+            font-style: normal;
+            font-family: $Segoe;
+            color: $font-color1;
+            line-height: 123px;
+        }
+        
+        .plane {
+            position: absolute;
+            box-sizing: content-box;
+            background-image: url(/dist/img/x04.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 137.00px;
+            height: 174.00px;
+            left: 135.00px;
+            top: 0.00px;
+        }
+    }
+    
+
+    .headingBox {
+        position: absolute;
+        box-sizing: content-box;
+        text-align: left;
+        width: 581.00px;
+        height: 258.00px;
+        left: 140px;
+        top: 381px;
+        line-height: 137px;
+        color:$font-color1;
+        font-size: 91px;
+        font-weight: 700;
+        transform-origin: center;    
+    }
 }
 
-.headingBox {
-    box-sizing: content-box;
-    text-align: left;
-    line-height: 137px;
-    color: rgb(255, 255, 255);
-    font-size: 91px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Arial;;
+.loginForm {
+    position: absolute;
+    width: 731.00px;
+    height: 1080.00px;
+    left: 1189.00px;
+    top: 0.00px;
+    float: right;
+
+    h1 {
+        text-align: Right;
+        line-height: 45px;
+        color: rgba(51, 51, 51, 1);
+        font-size: 45px;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 0.00px;
+        width: 454.00px;
+        height: 60.00px;
+        left: 1328.00px;
+        top: 167.50px;
+    }
 }
+
