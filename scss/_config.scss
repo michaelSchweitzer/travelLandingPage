@@ -1,3 +1,45 @@
 $Segoe:'Segoe UI', Arial;
-$font-color1: rgb(255, 255, 255);
 
+$color1: rgb(255, 255, 255);
+$color2: rgb(112, 112, 112);
+$color3: rgba(112, 112, 112, 0.5);
+$color4: rgb(62, 32, 81);
+
+@mixin styleFunc1 {
+    box-sizing: border-box;
+    border-bottom-color: $color3;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: $color3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: $color3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: $color3;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 534px;
+    height: 100px;
+    margin: 5px 0 40px 0;
+    padding-left: 40px;
+    text-align: left;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: $Segoe;
+}
+
+@mixin styleFunc2 {
+    font-size: 30.00px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: $Segoe;
+    color: $color4;
+    text-decoration: none;
+}

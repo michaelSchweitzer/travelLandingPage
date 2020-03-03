@@ -8,32 +8,42 @@
 </head>
 <body>
     <div class="container">
-        <div class="traveller"> 
-            <div class="travIcon">
-                <h1>Traveller</h1>
-                <div class="plane"></div>
-            </div>
-            <div class="headingBox">
-                Time to Travel 
-                <br> 
-                The World
-            </div>
-            <div class="scrollBox"></div>
+        <div class="bg-img"></div>
+        <div class="travIcon">
+            <h1>Traveller</h1>
+            <div class="plane"></div>
         </div>
+        <div class="headingBox"> Time to Travel <br> The World
+        </div>
+        <div class="scrollBox">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </div>
+     </div>
         <!--Login Form-->
         <div class="loginForm">
             <form action="insertActionPage" method="post">
 
-                <h1>Login to Your Account</h1>
+                <div class="label">
+                    <label>Login to Your Account</label>
+                </div>
 
-                <input type="text" placeholder="Enter Your Email" name="email">
-                <input type="text" placeholder="Enter Your Password" name="password">
+                <div class="emailBox">
+                    <input type="text" placeholder="Enter Your Email" name="email">
+                </div>
 
-                <a href="newPassword.html">Forget Password?</a>
+                <div class="passwordBox">
+                    <input type="password" placeholder="Enter Your Password" name="password">
+                </div>
 
-                <input type="submit" value="Login">
+                <div class="newPassword">
+                    <a href="newPassword.html">Forget Password?</a>
+                </div>
 
-                <a href="newAccount.html">Create Your New Account?</a>
+                <button type="submit" class="loginButton">Login</button>
+            
+                <div class="register">
+                    <a href="newAccount.html">Create Your New Account?</a>
+                </div>
 
             </form>
         </div>
