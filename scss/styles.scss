@@ -1,6 +1,6 @@
 @import 'config';
 
-body {
+#page1 {
     font-family: 'Open Sans', serif;
     margin: 0px;
     padding: 0px;
@@ -47,24 +47,15 @@ body {
 }
 
 .travIcon {
-    display: block;
-    position: absolute;
-    box-sizing: content-box;
-    width: 259px;
-    height: 174px;
-    left: 140px;
-    top: 49px;
+    @include styleFunc3;
 
     h1 {
-        position: absolute;
-        box-sizing: content-box;
-        font-size: 41px;
-        font-weight: 700;
-        font-style: normal;
-        font-family: $Segoe;
-        color: $color1;
-        line-height: 123px;
+       @include styleFunc4;
     } 
+}
+
+.plane {
+   @include styleFunc5;
 }
 
 .headingBox {
@@ -82,18 +73,7 @@ body {
     font-weight: 700;
 }
 
-.plane {
-    position: absolute;
-    box-sizing: content-box;
-    background-image: url(/dist/img/x04.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 137.00px;
-    height: 174.00px;
-    left: 135.00px;
-    top: 10.00px;
-}
+
 
 .scrollBox {
     position: absolute;
@@ -160,4 +140,20 @@ body {
     float: right;
     }
 }
+
+//Styles for New Password page.
+#page2 {
+    margin: 0;
+    padding: 0;
+}
+
+header{
     
+    background: linear-gradient(to top right, rgb(205, 85, 99), rgb(62, 33, 82));
+}
+
+.topNav{
+    width: 900px;
+    margin: 0 auto;
+}
+

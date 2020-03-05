@@ -43,3 +43,38 @@ $color4: rgb(62, 32, 81);
     color: $color4;
     text-decoration: none;
 }
+
+@mixin styleFunc3 {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    width: 259px;
+    height: 174px;
+    left: 140px;
+    top: 49px;
+
+}
+
+@mixin styleFunc4 {
+    position: absolute;
+    box-sizing: content-box;
+    font-size: 41px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: $Segoe;
+    color: $color1;
+    line-height: 123px;
+}
+
+@mixin styleFunc5 {
+    position: absolute;
+    box-sizing: content-box;
+    background-image: url(/dist/img/x04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 137.00px;
+    height: 174.00px;
+    left: 135.00px;
+    top: 10.00px;
+}
