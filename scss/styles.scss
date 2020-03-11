@@ -24,6 +24,7 @@
 .bg-img {
     position: absolute;
     box-sizing: border-box;
+    border: 1px solid $color2;
     background-image: url(/dist/img/duotone_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -32,18 +33,6 @@
     width: 1189px;
     top: 0px;
     left: 0px;
-    border-bottom-color: $color2;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: $color2;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right-color: $color2;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-top-color: $color2;
-    border-top-style: solid;
-    border-top-width: 1px;
 }
 
 .travIcon {
@@ -123,7 +112,7 @@
     }
 }
 
-.loginButton {
+#loginButton {
     @include styleFunc1;
     background-color: $color4;
     color: $color1;
@@ -143,32 +132,35 @@
 #page2 {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
     height: 120px;
-    background: linear-gradient(to top right, rgb(205, 85, 99), rgb(62, 33, 82));
+    background: linear-gradient(to top right, $color5, $color4);
     width: 100%;
 
     ul {
         margin: 0 150px;
-        list-style-type: none;
-        
+        list-style-type: none;    
     }
 
     li a{
         float: right;
-        margin: 25px auto 0 10px;
-        padding: 15px;
+        margin: 35px auto 0 10px;
+        padding: 7px 30px 7px 30px;
         text-decoration: none;
-        border-style: solid;
-        border-color: $color1;
-        border-width: 1px;
+        border: 1px solid $color1;
         border-radius: 12px;
         font-family: $Segoe;
         font-size: 30px;
+        font-weight: 600;
         color: $color1;
+    }
 
+    a:hover {
+        transition-duration: 0.3s;
+        padding: 10px 30px 10px 30px;
     }
 }
 
@@ -184,4 +176,70 @@ header {
 
 .plane2 {
   @include styleFunc7;
+}
+
+.findAcct {
+    font-family: $Segoe;
+    text-align: center;
+    margin-top: 200px;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    .inputStyle1 {
+        width: 400px;
+        height: 24px;
+        padding: 10px;
+        border-radius: 12px;
+        border: 2px solid $color5;
+        outline: none;
+    }
+
+}
+
+.formAction{
+    margin-top: 30px;
+    padding: 0 5px 0 5px;
+
+    .cancel {
+        display: inline-block;
+        margin-left: 10px;
+        border: 2px solid $color4 ;
+        border-radius: 12px;
+        padding: 7px 30px 7px 30px;
+        text-decoration: none;
+        width: 120px;
+        color: $color4;
+        font-family: $Segoe;
+        font-size: 30px;
+        font-weight: 600;
+        transition-duration: 0.3s;
+    }
+
+    #getAcct {
+        display: inline-block;
+        margin-left: 10px;
+        background-color: $color4;
+        border: 2px solid $color4;
+        border-radius: 12px;
+        padding: 7px 30px 7px 30px;
+        font-family: $Segoe;
+        font-size: 30px;
+        font-weight: 600;
+        color: $color1;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+}
+
+.cancel:hover {
+    background-color: $color4;
+    color: $color1;
+}
+
+#getAcct:hover {
+    background-color: $color1;
+    color: $color4;
 }
