@@ -1,0 +1,65 @@
+@import 'config';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top right, $color5, $color4);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: $Segoe;
+}
+
+.travIcon2 {
+    width: 259px;
+    height: 174px;
+    left: 100px;
+    top: 49px;
+}
+
+h1 {
+    font-size: 41px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: $Segoe;
+    color: $color1;
+}
+
+.plane {
+    position: absolute;
+    box-sizing: content-box;
+    background-image: url(/dist/img/x04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 137px;
+    height: 174px;
+    left: 183px;
+    top: -25px;
+    
+}
+
+form {
+    background-color: $color1;
+    margin: 15px auto 100px auto;
+    box-sizing: border-box;
+    height: 700px;
+    width: 700px;
+    border: 2px solid $color1;
+    border-radius: 12px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 32px;
+    color: $color4;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+input[type=text], [type=password] {
+    @include inputStyle1;
+    margin-top: 10px;
+}
+

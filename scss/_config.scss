@@ -6,6 +6,8 @@ $color3: rgba(112, 112, 112, 0.5);
 $color4: rgb(62, 32, 82);
 $color5: rgb(205, 85, 99);
 
+$linearGradient1: linear-gradient(to top right, $color5, $color4);
+
 @mixin styleFunc1 {
     box-sizing: border-box;
     border: 1px solid $color3;
@@ -61,10 +63,10 @@ $color5: rgb(205, 85, 99);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 137.00px;
-    height: 174.00px;
-    left: 135.00px;
-    top: 10.00px;
+    width: 137px;
+    height: 174px;
+    left: 135px;
+    top: 10px;
 }
 
 //Style for navIcon class's <h1>
@@ -84,9 +86,20 @@ $color5: rgb(205, 85, 99);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 137.00px;
-    height: 174.00px;
+    width: 137px;
+    height: 174px;
     float: left;
     margin: -25px;
     margin-left: -55px;
 }
+
+//Style for input boxes
+@mixin inputStyle1 {
+    width: 400px;
+    height: 24px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid $color5;
+    outline: none;
+}
+

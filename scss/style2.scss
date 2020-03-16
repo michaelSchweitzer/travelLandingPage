@@ -1,0 +1,111 @@
+@import 'config';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav {
+    height: 120px;
+    background: linear-gradient(to top right, $color5, $color4);
+    width: 100%;
+
+    ul {
+        margin: 0 150px;
+        list-style-type: none;    
+    }
+
+    li a{
+        float: right;
+        margin: 35px auto 0 10px;
+        padding: 7px 30px 7px 30px;
+        text-decoration: none;
+        border: 1px solid $color1;
+        border-radius: 12px;
+        font-family: $Segoe;
+        font-size: 30px;
+        font-weight: 600;
+        color: $color1;
+    }
+
+    a:hover {
+        transition-duration: 0.3s;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+.navIcon {
+    margin: 0 250px;
+    padding: 0;
+
+    h1 {
+        @include styleFunc6;    
+    }
+
+}
+
+.plane2 {
+  @include styleFunc7;
+}
+
+.findAcct {
+    font-family: $Segoe;
+    text-align: center;
+    margin-top: 200px;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    input[type=text], [type=password] {
+       @include inputStyle1;
+    }
+
+}
+
+.formAction{
+    margin-top: 30px;
+    padding: 0 5px 0 5px;
+
+    .cancel {
+        display: inline-block;
+        margin-left: 10px;
+        border: 2px solid $color4 ;
+        border-radius: 12px;
+        padding: 7px 30px 7px 30px;
+        text-decoration: none;
+        width: 120px;
+        color: $color4;
+        font-family: $Segoe;
+        font-size: 30px;
+        font-weight: 600;
+        transition-duration: 0.3s;
+    }
+
+    #getAcct {
+        display: inline-block;
+        margin-left: 10px;
+        background-color: $color4;
+        border: 2px solid $color4;
+        border-radius: 12px;
+        padding: 7px 30px 7px 30px;
+        font-family: $Segoe;
+        font-size: 30px;
+        font-weight: 600;
+        color: $color1;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+}
+
+.cancel:hover {
+    background-color: $color4;
+    color: $color1;
+}
+
+#getAcct:hover {
+    background-color: $color1;
+    color: $color4;
+}

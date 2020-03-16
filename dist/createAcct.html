@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style3.min.css">
+    <title>Create Account</title>
 </head>
+
 <body>
+    
+    <div class="travIcon2">
+        <h1>Traveller</h1>
+        <div class="plane"></div>
+    </div>
+
+    <div class="newAcct">
+        <form action="Insert_ActionFile" method="post">
+
+            <h2>Please Fill Form Below</h2>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email Address" name="user_email" required>
+
+            <label for="name">Username</label>
+            <input type="text" id="name" placeholder="Username" name="user_name" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password (8 or more characters)" name="user_password" required>
+            
+        </form>
+    </div>
     
 </body>
 </html>
