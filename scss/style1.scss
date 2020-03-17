@@ -92,14 +92,12 @@ body {
     width: 500px;
     height: 60px;
     left: 1304px;
-    top: 167.5px;
-    
-    .label {
-        margin: 0 0 100px 0;
-    }
+    top: 120px;
+    text-align: center;
 
     input[type=text], [type=password] {
        @include styleFunc1;
+       outline: none;  
     }
 }
 
@@ -108,15 +106,37 @@ body {
     @include styleFunc2;
     float: right;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 #loginButton {
-    @include styleFunc1;
+    box-sizing: border-box;
+    border: 1px solid $color2;
+    border-radius: 12px;
+    width: 534px;
+    height: 100px;
+    margin: 5px 0 40px 0;
+    padding-left: 40px;
+    text-align: center; 
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: $Segoe;
     background-color: $color4;
     color: $color1;
-    font-size: 40px;
-    text-align: center; 
     margin-top: 40px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#loginButton:hover {
+    background-color: $color1;
+    color: $color4;
+    border: 2px solid $color4;
 }
 
 .register {
@@ -124,7 +144,16 @@ body {
     @include styleFunc2;
     float: right;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
+
+label {
+    font-size: 28px;
+}
+ 
 
 
 

@@ -63,3 +63,11 @@ input[type=text], [type=password] {
     margin-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

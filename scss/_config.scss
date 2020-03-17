@@ -10,7 +10,7 @@ $linearGradient1: linear-gradient(to top right, $color5, $color4);
 
 @mixin styleFunc1 {
     box-sizing: border-box;
-    border: 1px solid $color3;
+    border: 2px solid $color5;
     border-radius: 12px;
     width: 534px;
     height: 100px;
